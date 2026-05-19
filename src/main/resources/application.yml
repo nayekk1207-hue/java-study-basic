@@ -1,0 +1,19 @@
+server:
+  port: 8080 # 서버 포트 설정 (기본 값 : 8080)
+
+spring:
+  application:
+    name: "demo2" # 서비스 이름
+
+  # Database Configuration (내 컴퓨터 3306번에 있는 mydb에 연결해라)
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: nayekk1207
+    password: kim2918#00
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
